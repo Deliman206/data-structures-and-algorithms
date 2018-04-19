@@ -19,7 +19,7 @@ shiftArray.insertShiftArray = (array, value) => {
     if (i === newIndexOdd) {
       solutionArray.push(array[i]);
       solutionArray.push(value);
-      i++;
+      i += 1;
     }
     solutionArray.push(array[i]);
   }
