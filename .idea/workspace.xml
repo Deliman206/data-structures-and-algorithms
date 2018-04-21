@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db2888da-ac6a-49de-ae07-a726d66a4e1f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/largest-product/__test__/largest-product-array.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/largest-product/lib/largest-product-array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/largest-product/lib/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="db2888da-ac6a-49de-ae07-a726d66a4e1f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,8 +26,8 @@
       <file leaf-file-name="largest-product-array.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/largest-product/lib/largest-product-array.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2610">
-              <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+            <state relative-caret-position="473">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -162,12 +155,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524263036881</updated>
       <workItem from="1524263038272" duration="3423000" />
-      <workItem from="1524266831598" duration="3600000" />
+      <workItem from="1524266831598" duration="3840000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7023000" />
+    <option name="totallyTimeSpent" value="7263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -242,8 +235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/largest-product/lib/largest-product-array.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
+        <state relative-caret-position="473">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
