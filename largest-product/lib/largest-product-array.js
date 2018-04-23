@@ -2,26 +2,26 @@
 
 const largestProduct = module.exports = {};
 
-// largestProduct.simple = (arr2d) => {
-//   let temp = 0;
-//   for (let i = 0; i < arr2d.length; i++) {
-//     for (let j = 0; j < arr2d[i].length; j++) {
-//       if (arr2d[i][j + 1] !== undefined && arr2d[i][j] * arr2d[i][j + 1] > temp) {
-//         temp = arr2d[i][j] * arr2d[i][j + 1];
-//       }
-//       if (arr2d[i][j - 1] !== undefined && arr2d[i][j] * arr2d[i][j - 1] > temp) {
-//         temp = arr2d[i][j] * arr2d[i][j - 1];
-//       }
-//       if (arr2d[i + 1] !== undefined && arr2d[i][j] * arr2d[i + 1][j] > temp) {
-//         temp = arr2d[i][j] * arr2d[i + 1][j];
-//       }
-//       if (arr2d[i - 1] !== undefined && arr2d[i][j] * arr2d[i - 1][j] > temp) {
-//         temp = arr2d[i][j] * arr2d[i - 1][j];
-//       }
-//     }
-//   }
-//   return temp;
-// };
+largestProduct.simple = (arr2d) => {
+  let temp = 0;
+  for (let i = 0; i < arr2d.length; i++) {
+    for (let j = 0; j < arr2d[i].length; j++) {
+      if (arr2d[i][j + 1] !== undefined && arr2d[i][j] * arr2d[i][j + 1] > temp) {
+        temp = arr2d[i][j] * arr2d[i][j + 1];
+      }
+      if (arr2d[i][j - 1] !== undefined && arr2d[i][j] * arr2d[i][j - 1] > temp) {
+        temp = arr2d[i][j] * arr2d[i][j - 1];
+      }
+      if (arr2d[i + 1] !== undefined && arr2d[i][j] * arr2d[i + 1][j] > temp) {
+        temp = arr2d[i][j] * arr2d[i + 1][j];
+      }
+      if (arr2d[i - 1] !== undefined && arr2d[i][j] * arr2d[i - 1][j] > temp) {
+        temp = arr2d[i][j] * arr2d[i - 1][j];
+      }
+    }
+  }
+  return temp;
+};
 
 largestProduct.robust = (arr2d) => {
   let temp = 0;
