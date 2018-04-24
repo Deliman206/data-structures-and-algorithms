@@ -18,10 +18,14 @@ module.exports = class LinkedList {
     currentNode.next = new Node(value);
     return this;
   }
-  insertAfter(value, newValue) { 
+  insertAfter(value, newValue) {
+    if (!this.head) {
+      this.head = new Node(newValue);
+      return this;
+    } 
     let currentNode = this.head;
     while (currentNode) {
-      if (currentNode === value) {
+      if (currentNode.value === value) {
         const temp = currentNode.next;
         currentNode.next = new Node(newValue);
         currentNode.next.next = temp;
@@ -29,19 +33,25 @@ module.exports = class LinkedList {
       }
       currentNode = currentNode.next;
     }
-    return new Error(`Value ${value} does not exist in this linked List`);
+    throw new Error(`Value ${value} does not exist in this Linked List`);
   }
   insertBefore(value, newValue) {
+    if (!this.head) {
+      this.head = new Node(newValue);
+      return this;
+    }
     let currentNode = this.head;
     while (currentNode) {
-      if (currentNode.next === value) {
-        const temp = currentNode.next;
-        currentNode.next = new Node(newValue);
-        currentNode.next.next = temp;
-        return this;
+      if (currentNode.next !== null) {
+        if (currentNode.next.value === value) {
+          const temp = currentNode.next;
+          currentNode.next = new Node(newValue);
+          currentNode.next.next = temp;
+          return this;
+        }
       }
       currentNode = currentNode.next;
     }
-    return new Error(`Value ${value} does not exist in this Linked List`);
+    throw new Error(`Value ${value} does not exist in this Linked List`);
   }
 };
