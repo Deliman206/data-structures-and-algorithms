@@ -5,7 +5,8 @@
   "main": "reverse-an-array.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "eslint . && jest --coverage"
+    "test": "eslint . && jest --coverage",
+    "test2": "jest --coverage"
   },
   "repository": {
     "type": "git",
