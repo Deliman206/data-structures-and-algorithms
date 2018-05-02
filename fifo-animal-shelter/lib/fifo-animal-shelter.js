@@ -21,16 +21,5 @@ const AnimalShelter = class AnimalShelter {
     }
     return this.storage.splice(0, 1);
   }
-  searchQueue(name) {
-    for (let i = 0; i <this.storage.length; i++) {
-      if (this.storage[i].name === name) {
-        return this.storage.splice(i, 1).name;
-      }
-    }
-    return undefined;
-  }
-  viewQueue() {
-    return this.storage;
-  }
 };
 export default AnimalShelter;
