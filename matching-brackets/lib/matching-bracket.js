@@ -12,17 +12,17 @@ const match = (string) => {
       if (string[i] === close[0]) {
         if (stack[stack.length - 1] === open[0]) {
           stack.pop();
-        }
+        } else { return false; }
       }
       if (string[i] === close[1]) {
         if (stack[stack.length - 1] === open[1]) {
           stack.pop();
-        }
+        } else { return false; }        
       }
       if (string[i] === close[2]) {
         if (stack[stack.length - 1] === open[2]) {
           stack.pop();
-        }
+        } else { return false; }
       }
     }
   }

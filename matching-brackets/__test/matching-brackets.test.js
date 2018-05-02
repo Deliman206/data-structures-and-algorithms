@@ -12,7 +12,7 @@ describe('Should validate the matching-bracket function', () => {
     expect(match(test2)).toBeTruthy();
   });
   test('Should return false from valid string', () => {
-    const test0 = '(){[}]';
+    const test0 = '(){{}]';
     const test1 = '({}[)])';
     const test2 = '({})}{[]}';
     expect(match(test0)).toBeFalsy();
