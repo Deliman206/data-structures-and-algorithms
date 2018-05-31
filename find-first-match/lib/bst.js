@@ -10,11 +10,9 @@ class BinarySearchTree {
     if (!this.root) {
       this.root = node;
     } else {
-      console.log('node', node);
       this._insert(this.root, node);
       // console.log('done');
     }
-    console.log('how many times?', this.state.solution);
     return this.state.solution;
   }
 

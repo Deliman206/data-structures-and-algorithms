@@ -10,5 +10,5 @@ describe('should validate findFirstMatch function', () => {
   test('Should return NO MATCHES using findFirstMatch', () => {
     const string = 'Jack and Jill went up a hill';
     expect(findFirstMatch(string)).toEqual('No matches');
-  })
+  });
 });
