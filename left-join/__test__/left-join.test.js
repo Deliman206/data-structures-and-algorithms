@@ -8,7 +8,7 @@ describe('Should validate the leftJoin function', () => {
   hm2.set('fond', ['upset']);
   hm2.set('wrong', ['happy']);
 
-  test('Should return a hashmap with the concatination of two hashmaps', () => {
+  test('Should return a hashmap with the concatination of two hashmaps and null when nothing to concat', () => {
     const hm3 = new Map();
     hm3.set('fond', ['enamored', 'upset']);
     hm3.set('wrath', ['anger', 'notHappy', null]);
