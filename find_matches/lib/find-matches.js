@@ -10,7 +10,6 @@ export default function findMatches(tree, value) {
   if (!tree) return undefined;
   queue.enqueue(tree);
   while (queue) {
-    console.log(queue);
     currNode = queue.dequeue();
     for (let i = 0; i < currNode.children.length; i++) {
       queue.enqueue(currNode.children[i]);
