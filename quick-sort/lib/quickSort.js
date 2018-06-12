@@ -25,6 +25,13 @@ function partitionHoare(array, left, right) {
 }
 
 export default function quicksortHoare(array, left, right) {
+  if (!array || array.length === 0) return undefined;
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < array[i + 1]) count += 1;
+  }
+  if (array.length - 1 === count) return 'Already Sorted';
+
   left = left || 0;
   right = right || array.length - 1;
 
@@ -35,7 +42,7 @@ export default function quicksortHoare(array, left, right) {
   }
 
   if (right > pivot) {
-    quicksortHoare(array, pivot, right)
+    quicksortHoare(array, pivot, right);
   }
 
   return array;
